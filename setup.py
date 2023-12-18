@@ -9,11 +9,10 @@ def get_requirements():
     """
     This function will return a list of requirements
     """
-
     with open("requirements.txt", encoding='utf-8') as f:
         lines = f.read()
 
-    list_packages = lines.split()
+    list_packages = lines.split('\n')
 
     return list_packages
 
