@@ -1,10 +1,10 @@
+import os
+import sys
 from finance.exception import FinanceException
 from finance.logger import logging
 from finance.entity.config_entity import DataIngestionConfig
 from finance.entity.artifact_entity import DataIngestionArtifact
 from sklearn.model_selection import train_test_split
-import os
-import sys
 from pandas import DataFrame
 from finance.data_access.finance_data import FinanceData
 # from finance.utils.main_utils import read_yaml_file
@@ -12,6 +12,9 @@ from finance.data_access.finance_data import FinanceData
 
 
 class DataIngestion:
+    """
+    Data Ingestion
+    """
 
     def __init__(self, data_ingestion_config: DataIngestionConfig):
         try:
@@ -46,7 +49,7 @@ class DataIngestion:
 
         try:
             train_set, test_set = train_test_split(
-                dataframe, 
+                dataframe,
                 test_size=self.data_ingestion_config.train_test_split_ratio
             )
 
