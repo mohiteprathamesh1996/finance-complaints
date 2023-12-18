@@ -9,4 +9,6 @@ ipykernel
 boto3
 pandas
 apache-airflow
+scikit-learn
 autopep8
+pylint
