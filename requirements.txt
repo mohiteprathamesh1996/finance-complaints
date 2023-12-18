@@ -1,11 +1,12 @@
+pymongo[srv]==4.2.0
 python-dotenv
 requests
+scikit-learn
 jupyterlab
 pyspark
 PyYAML
 ipykernel
 boto3
 pandas
-pymongo[srv]
 apache-airflow
 autopep8
